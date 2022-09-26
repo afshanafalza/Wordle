@@ -1,0 +1,51 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(5, 74px);
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 9px;  
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.keyboard {
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(10, 52px);
+    justify-content: center;
+}
+
+.keyboard2 {
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(9, 52px);
+    justify-content: center;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

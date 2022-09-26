@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="formatting.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <section>
+        <!-- Container -->
+        <div class="nav">
+            <!-- Item 1 -->
+            <div class="leftBar">
+                <!-- Item 1.1 -->
+                <img id = "menuIcon" src = "https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png"/>
+                <!-- Item 1.2 -->
+                <img id = "helpIcon" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/300px-Icon-round-Question_mark.svg.png"/>
+            </div>
+            <!-- Item 2 -->
+            <div class="centerBar">
+                <!-- Item 2.1 -->
+                <p id="wordle"> Wordle </p>
+            </div>
+            <!-- Item 3 -->
+            <div class="rightBar">
+                <!-- Item 3.1-->
+                <img id = "barIcon" src = "http://cdn.onlinewebfonts.com/svg/img_63842.png"/>
+                <!-- Item 3.2 -->
+                <img id = "settingsIcon" src = "https://cdn3.iconfinder.com/data/icons/vector-icons-for-mobile-apps-2/512/Settings_black-512.png"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid -->
+    <section>
+        <!-- Container -->
+        <div class = "grid">
+            <div class = "square row-1 col-1" id = "s1"></div>
+            <div class = "square row-1 col-2" id = "s2"></div>
+            <div class = "square row-1 col-3" id = "s3"></div>
+            <div class = "square row-1 col-4" id = "s4"></div>
+            <div class = "square row-1 col-5" id = "s5"></div>
+            <div class = "square row-2 col-1" id = "s6"></div>
+            <div class = "square row-2 col-2" id = "s7"></div>
+            <div class = "square row-2 col-3" id = "s8"></div>
+            <div class = "square row-2 col-4" id = "s9"></div>
+            <div class = "square row-2 col-5" id = "s10"></div>
+            <div class = "square row-3 col-1" id = "s11"></div>
+            <div class = "square row-3 col-2" id = "s12"></div>
+            <div class = "square row-3 col-3" id = "s13"></div>
+            <div class = "square row-3 col-4" id = "s14"></div>
+            <div class = "square row-3 col-5" id = "s15"></div>
+            <div class = "square row-4 col-1" id = "s16"></div>
+            <div class = "square row-4 col-2" id = "s17"></div>
+            <div class = "square row-4 col-3" id = "s18"></div>
+            <div class = "square row-4 col-4" id = "s19"></div>
+            <div class = "square row-4 col-5" id = "s20"></div>
+            <div class = "square row-5 col-1" id = "s21"></div>
+            <div class = "square row-5 col-2" id = "s22"></div>
+            <div class = "square row-5 col-3" id = "s23"></div>
+            <div class = "square row-5 col-4" id = "s24"></div>
+            <div class = "square row-5 col-5" id = "s25"></div>
+            <div class = "square row-6 col-1" id = "s26"></div>
+            <div class = "square row-6 col-2" id = "s27"></div>
+            <div class = "square row-6 col-3" id = "s28"></div>
+            <div class = "square row-6 col-4" id = "s29"></div>
+            <div class = "square row-6 col-5" id = "s30"></div>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Keyboard -->
+    <section>
+        <!-- Container -->
+        <div class="keyboard">
+            <button type="button" class="key" id="qKey"> <p class="keyText"> Q </p></button>
+            <button type="button" class="key" id="wKey"> <p class="keyText"> W </p></button>
+            <button type="button" class="key" id="eKey"> <p class="keyText"> E </p></button>
+            <button type="button" class="key" id="rKey"> <p class="keyText"> R </p></button>
+            <button type="button" class="key" id="tKey"> <p class="keyText"> T </p></button>
+            <button type="button" class="key" id="yKey"> <p class="keyText"> Y </p></button>
+            <button type="button" class="key" id="uKey"> <p class="keyText"> U </p></button>
+            <button type="button" class="key" id="iKey"> <p class="keyText"> I </p></button>
+            <button type="button" class="key" id="oKey"> <p class="keyText"> O </p></button>
+            <button type="button" class="key" id="pKey"> <p class="keyText"> P </p></button>
+        </div>
+        <!-- Container -->
+        <div class="keyboard2">
+            <button type="button" class="key" id="aKey"> <p class="keyText"> A </p></button>
+            <button type="button" class="key" id="sKey"> <p class="keyText"> S </p></button>
+            <button type="button" class="key" id="dKey"> <p class="keyText"> D </p></button>
+            <button type="button" class="key" id="fKey"> <p class="keyText"> F </p></button>
+            <button type="button" class="key" id="gKey"> <p class="keyText"> G </p></button>
+            <button type="button" class="key" id="hKey"> <p class="keyText"> H </p></button>
+            <button type="button" class="key" id="jKey"> <p class="keyText"> J </p></button>
+            <button type="button" class="key" id="kKey"> <p class="keyText"> K </p></button>
+            <button type="button" class="key" id="lKey"> <p class="keyText"> L </p></button>
+        </div>
+        <!-- Container -->
+        <div class="keyboard2">
+            <button type="button" class="key2" id="enterKey"> <p class="keyText"> ENTER </p></button>
+            <button type="button" class="key" id="zKey"> <p class="keyText"> Z </p></button>
+            <button type="button" class="key" id="xKey"> <p class="keyText"> X </p></button>
+            <button type="button" class="key" id="cKey"> <p class="keyText"> C </p></button>
+            <button type="button" class="key" id="vKey"> <p class="keyText"> V </p></button>
+            <button type="button" class="key" id="bKey"> <p class="keyText"> B </p></button>
+            <button type="button" class="key" id="nKey"> <p class="keyText"> N </p></button>
+            <button type="button" class="key" id="mKey"> <p class="keyText"> M </p></button>
+            <button type="button" class="key3" id="backKey"> <p class="keyText"> <img class="backIcon" src="https://cdn3.iconfinder.com/data/icons/social-productivity-line-art-3/128/delete-512.png"> </p></button>
+        </div>
+    </section>
+    <script src="script.js" type="text/javascript" defer></script>
+</body>
+</html>
